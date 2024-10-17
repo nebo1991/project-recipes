@@ -32,7 +32,7 @@ function App() {
     };
 
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-rose-200" >
             <Navbar />
             <main className="flex-grow">
                 <Routes>
