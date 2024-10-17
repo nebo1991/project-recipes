@@ -3,10 +3,11 @@ import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
 import Navbar from './components/Navbar';
-import RecipesListPage from './components/RecipesListPage';
-import RecipeDetailsCard from './components/RecipeDetailsCard';
+import RecipesListPage from '../src/pages/RecipesListPage';
+import RecipeDetailsPage from '../src/pages/RecipeDetailsPage';
 import { useState } from 'react';
 import recipesData from './assets/recipes.json';
+import AboutPage from './pages/AboutPage';
 
 function App() {
     const [recipes, setRecipes] = useState(recipesData);
@@ -46,7 +47,8 @@ function App() {
                             handleSubmit={handleSubmit} 
                         />
                     } />
-                    <Route path="/recipes/:id" element={<RecipeDetailsCard recipes={recipes} />} />
+                    <Route path="/recipes/:id" element={<RecipeDetailsPage recipes={recipes} />} />
+                    <Route path="/about" element={<AboutPage  />} />
                 </Routes>
             </main>
             <Footer />

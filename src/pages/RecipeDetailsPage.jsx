@@ -1,9 +1,8 @@
-// src/components/RecipeDetailsCard.jsx
 import { useParams } from "react-router-dom";
 
-const RecipeDetailsCard = ({ recipes }) => {
+const RecipeDetailsPage = ({ recipes }) => {
     const { id } = useParams();
-    const singleRecipe = recipes.find((recipe) => recipe.id === parseInt(id)); // Use parseInt to match id types
+    const singleRecipe = recipes.find((recipe) => recipe.id === parseInt(id)); 
 
     if (!singleRecipe) {
         return <div>Recipe not found</div>;
@@ -26,4 +25,4 @@ const RecipeDetailsCard = ({ recipes }) => {
     );
 };
 
-export default RecipeDetailsCard;
+export default RecipeDetailsPage;
