@@ -14,6 +14,8 @@ function App() {
     const [name, setName] = useState("");
     const [calories, setCalories] = useState(0);
     const [servings, setServings] = useState(1);
+    const [image, setImage] = useState("");
+    const [recipeInfo, setRecipeInfo] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,14 +23,17 @@ function App() {
             id: Math.floor(Math.random() * (90 - 10 + 1)) + 10,
             name,
             calories,
-            image: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fpngtree.com%2Fso%2Ffood-svg&psig=AOvVaw0Svct_7bgRCbzn-Skr4Izx&ust=1729259421085000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCLDkmb_HlYkDFQAAAAAdAAAAABAE", 
+            image,
             servings,
+            recipeInfo,
         };
 
         setRecipes((prevRecipes) => [...prevRecipes, newRecipe]);
         setName("");
         setCalories(0);
         setServings(1);
+        setImage("");
+        setRecipeInfo("");
     };
 
     return (
@@ -41,10 +46,14 @@ function App() {
                             recipes={recipes} 
                             name={name} 
                             calories={calories} 
+                            image={image}
+                            recipeInfo={recipeInfo}
                             setName={setName} 
                             setCalories={setCalories} 
                             setServings={setServings} 
+                            setImage={setImage}
                             handleSubmit={handleSubmit} 
+                            setRecipeInfo={setRecipeInfo}
                         />
                     } />
                     <Route path="/recipes/:id" element={<RecipeDetailsPage recipes={recipes} />} />
