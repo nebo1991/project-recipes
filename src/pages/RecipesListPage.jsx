@@ -1,4 +1,3 @@
-// src/components/RecipesListPage.jsx
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -9,6 +8,7 @@ const RecipesListPage = ({
   servings, setServings, 
   calories, setCalories, 
   recipeInfo, setRecipeInfo, 
+  deleteRecipe, 
   handleSubmit 
 }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -87,7 +87,6 @@ const RecipesListPage = ({
         </form>
       )}
 
-      {/* Recipes List */}
       <div className="w-[920px] flex flex-wrap justify-between mx-auto mt-6">
         {recipes.map((recipe) => {
           return (
@@ -102,6 +101,12 @@ const RecipesListPage = ({
                 {recipe.calories > 400 && (
                   <button className="bg-red-200 p-2 rounded-full my-6">High 🔥</button>
                 )}
+                <button 
+                  onClick={() => deleteRecipe(recipe.id)}
+                  className=" text-white p-2 rounded-lg hover:bg-red-600 transition duration-300"
+                >
+                  Delete
+                </button>
               </div>
             </div>
           );
