@@ -9,7 +9,7 @@ const RecipesListPage = ({ recipes, name, setName, servings, setServings, calori
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <div className=' flex-column items-center'>
+                <div className='flex flex-col  justify-center items-center'>
                     <input name="name" type="text" placeholder="Recipe Name" value={name} onChange={handlename} />
                     <input name="calories" type="number" placeholder="Calories" value={calories} onChange={handlecalories} />
                     <input name="calories" type="number" placeholder="Servings" value={servings} onChange={handleServings} />
