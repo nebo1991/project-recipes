@@ -1,9 +1,9 @@
+// src/components/RecipeDetailsCard.jsx
 import { useParams } from "react-router-dom";
-import recipesData from '../assets/recipes.json';
 
-const RecipeDetailsCard = () => {
-    const { id } = useParams();  // Change from recipeId to id
-    const singleRecipe = recipesData.find((recipe) => recipe.id === id);
+const RecipeDetailsCard = ({ recipes }) => {
+    const { id } = useParams();
+    const singleRecipe = recipes.find((recipe) => recipe.id === parseInt(id)); // Use parseInt to match id types
 
     if (!singleRecipe) {
         return <div>Recipe not found</div>;
