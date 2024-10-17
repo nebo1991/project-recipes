@@ -1,4 +1,3 @@
-// src/App.jsx
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer';
@@ -16,6 +15,11 @@ function App() {
     const [servings, setServings] = useState(1);
     const [image, setImage] = useState("");
     const [recipeInfo, setRecipeInfo] = useState("");
+
+    const deleteRecipe = (recipeId) => {
+        const filteredRecipes = recipes.filter((recipe) => recipe.id !== recipeId);
+        setRecipes(filteredRecipes)
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -37,7 +41,7 @@ function App() {
     };
 
     return (
-        <div className="flex flex-col min-h-screen bg-rose-200" >
+        <div className="flex flex-col min-h-screen bg-rose-200">
             <Navbar />
             <main className="flex-grow">
                 <Routes>
@@ -53,11 +57,12 @@ function App() {
                             setServings={setServings} 
                             setImage={setImage}
                             handleSubmit={handleSubmit} 
+                            deleteRecipe={deleteRecipe} 
                             setRecipeInfo={setRecipeInfo}
                         />
                     } />
                     <Route path="/recipes/:id" element={<RecipeDetailsPage recipes={recipes} />} />
-                    <Route path="/about" element={<AboutPage  />} />
+                    <Route path="/about" element={<AboutPage />} />
                 </Routes>
             </main>
             <Footer />
