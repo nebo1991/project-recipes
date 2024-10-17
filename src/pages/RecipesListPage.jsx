@@ -1,20 +1,65 @@
 // src/components/RecipesListPage.jsx
 import { Link } from 'react-router-dom';
 
-const RecipesListPage = ({ recipes, name, setName, servings, setServings, calories, setCalories, handleSubmit }) => {
+const RecipesListPage = ({ recipes, name, setName, image, setImage, servings, setServings, calories, setCalories, recipeInfo, setRecipeInfo,  handleSubmit }) => {
     const handlename = (e) => setName(e.target.value);
     const handlecalories = (e) => setCalories(e.target.value);
     const handleServings = (e) => setServings(e.target.value);
+    const handleImage = (e) => setImage(e.target.value);
+    const handleRecipeInfo = (e) => setRecipeInfo(e.target.value);
 
     return (
         <>
             <form onSubmit={handleSubmit}>
-                <div className='flex flex-col  justify-center items-center'>
-                    <input name="name" type="text" placeholder="Recipe Name" value={name} onChange={handlename} />
-                    <input name="calories" type="number" placeholder="Calories" value={calories} onChange={handlecalories} />
-                    <input name="calories" type="number" placeholder="Servings" value={servings} onChange={handleServings} />
-                    <button type="submit">Add Recipe</button>
-                </div>
+            <div className='flex flex-col justify-center items-center bg-gray-100 p-6 rounded-lg shadow-md max-w-md mx-auto'>
+  <input
+    className='mb-4 p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500'
+    name="name"
+    type="text"
+    placeholder="Recipe Name"
+    value={name}
+    onChange={handlename}
+  />
+  <input
+    className='mb-4 p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500'
+    name="text"
+    type="url"
+    placeholder="Add URL"
+    value={image}
+    onChange={handleImage}
+  />
+  <input
+    className='mb-4 p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500'
+    name="recipeInfo"
+    type="text"
+    placeholder="Recipe Info"
+    value={recipeInfo}
+    onChange={handleRecipeInfo}
+  />
+  <input
+    className='mb-4 p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500'
+    name="calories"
+    type="number"
+    placeholder="Calories"
+    value={calories}
+    onChange={handlecalories}
+  />
+  <input
+    className='mb-4 p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500'
+    name="servings"
+    type="number"
+    placeholder="Servings"
+    value={servings}
+    onChange={handleServings}
+  />
+  <button
+    className='bg-indigo-500 text-white p-3 rounded-lg w-full hover:bg-indigo-600 transition duration-300'
+    type="submit"
+  >
+    Add Recipe
+  </button>
+</div>
+
             </form>
             <div className="w-[920px] flex flex-wrap justify-between mx-auto">
                 {recipes.map((recipe) => {
