@@ -4,118 +4,135 @@
     "name": "Pizza",
     "calories": 400,
     "image": "https://i.imgur.com/eTmWoAN.png",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Preheat the oven to 475°F (245°C). Roll out pizza dough, spread tomato sauce, add mozzarella cheese and toppings of your choice (pepperoni, vegetables, etc.). Bake for 12-15 minutes until the crust is golden and the cheese is melted."
   },
   {
     "id": 2,
     "name": "Salad",
     "calories": 150,
     "image": "https://i.imgur.com/DupGBz5.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "In a bowl, mix lettuce, cherry tomatoes, cucumbers, and red onions. Drizzle with olive oil, lemon juice, salt, and pepper. Optionally, add feta cheese or nuts for extra flavor."
   },
   {
     "id": 3,
     "name": "Sweet Potato",
     "calories": 120,
     "image": "https://i.imgur.com/hGraGyR.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Preheat oven to 400°F (200°C). Peel and cube sweet potatoes. Toss with olive oil, salt, pepper, and paprika. Roast on a baking sheet for 25-30 minutes, turning halfway through."
   },
   {
     "id": 4,
     "name": "Gnocchi",
     "calories": 500,
     "image": "https://i.imgur.com/93ekwW0.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Boil salted water in a pot. Add gnocchi and cook until they float, about 2-3 minutes. Drain and toss with butter and sage, or serve with marinara sauce and grated Parmesan."
   },
   {
-    "id": 5,    
+    "id": 5,
     "name": "Pot Roast",
     "calories": 350,
     "image": "https://i.imgur.com/WCzJDWz.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Season a beef roast with salt and pepper. Sear in a hot pan until browned on all sides. Place in a slow cooker with carrots, potatoes, onions, garlic, and beef broth. Cook on low for 6-8 hours."
   },
   {
-    "id": 6,    
+    "id": 6,
     "name": "Lasagna",
     "calories": 750,
     "image": "https://i.imgur.com/ClxOafl.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Preheat oven to 375°F (190°C). Layer lasagna noodles, ricotta cheese, mozzarella, marinara sauce, and ground beef or sausage in a baking dish. Repeat layers and bake for 45 minutes, covered, then uncover and bake an additional 15 minutes."
   },
   {
     "id": 7,
     "name": "Hamburger",
     "calories": 400,
     "image": "https://i.imgur.com/LoG39wK.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Season ground beef with salt and pepper. Form patties and cook in a pan or on a grill over medium heat for 4-5 minutes per side. Serve on a bun with lettuce, tomato, onions, cheese, and condiments."
   },
   {
     "id": 8,
     "name": "Pad Thai",
     "calories": 475,
     "image": "https://i.imgur.com/5ktcSzF.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Cook rice noodles according to package. In a pan, sauté garlic, shrimp or chicken, and eggs. Add noodles, tamarind paste, fish sauce, and sugar. Toss with bean sprouts, peanuts, and lime juice before serving."
   },
   {
-    "id": 9,   
+    "id": 9,
     "name": "Almonds",
     "calories": 75,
     "image": "https://i.imgur.com/JRp4Ksx.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "No cooking required! Simply enjoy raw almonds as a healthy snack, or lightly toast them in a pan for a roasted flavor."
   },
   {
-    "id": 123,    
+    "id": 123,
     "name": "Sarma",
     "calories": 200,
     "image": "https://i.imgur.com/yOlf4Fj.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Mix ground meat, rice, and spices. Roll the mixture into cabbage leaves. Place rolls in a pot with tomato sauce and water. Simmer on low heat for 2-3 hours until tender."
   },
   {
-    "id": 124,    
+    "id": 124,
     "name": "Bacon",
     "calories": 175,
     "image": "https://i.imgur.com/7GlqDsG.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Cook bacon in a skillet over medium heat until crispy, about 4-5 minutes per side. Drain on paper towels before serving."
   },
   {
     "id": 125,
     "name": "Hot Dog",
     "calories": 275,
     "image": "https://i.imgur.com/QqVHdRu.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Grill or boil the hot dog for 5-7 minutes. Serve in a bun with your choice of condiments like mustard, ketchup, onions, and relish."
   },
   {
     "id": 126,
     "name": "Chocolate Cake",
     "calories": 490,
     "image": "https://i.imgur.com/yrgzA9x.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "Preheat oven to 350°F (175°C). Mix flour, cocoa powder, sugar, eggs, butter, and baking powder. Pour into a greased cake pan and bake for 25-30 minutes. Let cool before frosting with chocolate icing."
   },
   {
     "id": 333,
     "name": "Wheat Bread",
     "calories": 175,
     "image": "https://i.imgur.com/TsWzMfM.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "In a bowl, mix whole wheat flour, yeast, salt, and water. Knead the dough for 10 minutes. Let rise for 1 hour, then bake at 375°F (190°C) for 30-35 minutes until golden brown."
   },
   {
     "id": 444,
     "name": "Orange",
     "calories": 85,
     "image": "https://i.imgur.com/abKGOcv.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "No cooking required! Simply peel the orange and enjoy it as a fresh, juicy snack."
   },
   {
     "id": 555,
     "name": "Banana",
     "calories": 175,
     "image": "https://i.imgur.com/BMdJhu5.jpg",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "No cooking required! Peel and eat the banana as a quick, nutritious snack, or slice it over cereal or yogurt."
   },
   {
     "id": 666,
     "name": "Yogurt",
     "calories": 125,
     "image": "https://i.imgur.com/URhdrAm.png",
-    "servings": 1
+    "servings": 1,
+    "recipeInfo": "No preparation required! Enjoy yogurt as is, or add fresh fruit, honey, and granola for a healthy and delicious treat."
   }
 ]
