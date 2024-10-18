@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import trashIcon from '../assets/trash-icon.svg'
 
 const RecipesListPage = ({ 
   recipes, 
@@ -101,12 +102,19 @@ const RecipesListPage = ({
                 {recipe.calories > 400 && (
                   <button className="bg-red-200 p-2 rounded-full my-6">High 🔥</button>
                 )}
-                <button 
-                  onClick={() => deleteRecipe(recipe.id)}
-                  className=" text-white p-2 rounded-lg hover:bg-red-600 transition duration-300"
-                >
-                  Delete
-                </button>
+      <button 
+      onClick={() => deleteRecipe(recipe.id)}
+      className="w-12 h-12 flex items-center justify-center"  
+      >
+      <img 
+      src={trashIcon} 
+      alt="Delete Recipe" 
+      className="h-8 w-8 p-1 rounded-lg hover:bg-red-600 transition duration-300"
+      />
+      </button>
+
+
+
               </div>
             </div>
           );
