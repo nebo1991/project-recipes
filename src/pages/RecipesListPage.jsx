@@ -18,8 +18,8 @@ const RecipesListPage = ({
     setIsOpen(!isOpen);
   };
 
-  const handlename = (e) => setName(e.target.value);
-  const handlecalories = (e) => setCalories(e.target.value);
+  const handleName = (e) => setName(e.target.value);
+  const handleCalories = (e) => setCalories(e.target.value);
   const handleServings = (e) => setServings(e.target.value);
   const handleImage = (e) => setImage(e.target.value);
   const handleRecipeInfo = (e) => setRecipeInfo(e.target.value);
@@ -44,7 +44,7 @@ const RecipesListPage = ({
               type="text"
               placeholder="Recipe Name"
               value={name}
-              onChange={handlename}
+              onChange={handleName}
             />
             <input
               className='mb-4 p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500'
@@ -68,7 +68,7 @@ const RecipesListPage = ({
               type="number"
               placeholder="Calories"
               value={calories}
-              onChange={handlecalories}
+              onChange={handleCalories}
             />
             <input
               className='mb-4 p-3 border border-gray-300 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-indigo-500'
