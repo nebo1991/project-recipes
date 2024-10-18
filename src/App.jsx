@@ -7,6 +7,7 @@ import RecipeDetailsPage from '../src/pages/RecipeDetailsPage';
 import { useState } from 'react';
 import recipesData from './assets/recipes.json';
 import AboutPage from './pages/AboutPage';
+import ErrorPage from './pages/ErrorPage';
 
 function App() {
     const [recipes, setRecipes] = useState(recipesData);
@@ -63,6 +64,7 @@ function App() {
                     } />
                     <Route path="/recipes/:id" element={<RecipeDetailsPage recipes={recipes} />} />
                     <Route path="/about" element={<AboutPage />} />
+                    <Route path="*" element={<ErrorPage />} />
                 </Routes>
             </main>
             <Footer />
